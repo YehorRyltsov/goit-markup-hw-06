@@ -90,6 +90,7 @@ img {
   padding-top: 32px;
   padding-bottom: 28px;
   transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-link:hover {
   color: var(--header-link-color);
@@ -118,6 +119,7 @@ img {
   color: var(--text-color);
   margin-right: 30px;
   transition: color 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-mail:focus .header-contacts-icon {
   fill: #2196f3;
@@ -127,6 +129,7 @@ img {
 }
 .header-contacts-link {
   transition: color 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts-link:hover .header-mail {
   color: #2196f3;
@@ -142,6 +145,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--text-color);
   transition: color 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-phone:focus .header-contacts-icon {
   fill: #2196f3;
@@ -206,7 +210,8 @@ img {
   border: 0px;
   margin: 0 auto;
   border-radius: 4px;
-  transition: box-shadow 250ms, background 250ms, border-radius 250ms;
+  transition: box-shadow 250ms, background-color 250ms, border-radius 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-btn-text {
   font-family: inherit;
@@ -370,6 +375,7 @@ img {
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .comand-icon-link:hover {
   fill: #ffffff;
@@ -410,6 +416,7 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   transition: fill 250ms, border-radius 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .company-item {
   width: 170px;
@@ -464,6 +471,7 @@ img {
   letter-spacing: 0.03em;
   color: #ffffff;
   transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-map:hover {
   color: #2196f3;
@@ -493,6 +501,7 @@ img {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   transition: color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-phone:hover {
   color: var(--hov-foc);
@@ -503,6 +512,7 @@ img {
 .footer-social {
   margin-top: 72px;
   margin-left: 70px;
+  margin-right: 93px;
 }
 .footer-text {
   display: block;
@@ -530,6 +540,7 @@ img {
   cursor: pointer;
   background: rgba(255, 255, 255, 0.1);
   transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-link:hover {
   background-color: #2196f3;
@@ -537,15 +548,69 @@ img {
 .footer-icon-link:focus {
   background-color: #2196f3;
 }
-.footer-lable {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: #757575;
-  margin-bottom: 4px;
-  display: block;
+.footer-subscribe {
+  margin-top: 72px;
 }
-
+.footer-lable {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: block;
+  padding-bottom: 20px;
+}
+.footer-input-box {
+  height: 50px;
+}
+.footer-input {
+  width: 358px;
+  height: 100%;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  padding: 15px;
+  margin-right: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-submit-btn {
+  width: 200px;
+  height: 100%;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid #2196f3;
+  padding: 10px 28px;
+  cursor: pointer;
+  transition: background-color 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-submit-btn:hover {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.footer-submit-btn:focus {
+  background: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.footer-btn-text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+.footer-input-icon {
+  fill: #ffffff;
+  margin-left: 10px;
+}
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -584,6 +649,7 @@ img {
   padding: 6px 22px;
   transition: background-color 250ms, color 250ms, box-shadow 250ms,
     border-radius 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .herop-button:hover {
   background-color: var(--hov-foc);
@@ -612,15 +678,18 @@ img {
 .hero-portfolio-item {
   margin-bottom: 30px;
   transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-portfolio-item:hover .hero-portfolio-top {
   transform: translateY(0%);
   transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-portfolio-box {
   position: relative;
@@ -637,6 +706,7 @@ img {
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: auto;
 }
 .herop-text {
@@ -669,6 +739,7 @@ img {
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms, visibility 250ms, transform 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal {
   width: 528px;
@@ -720,6 +791,8 @@ img {
   border-radius: 4px;
   padding-left: 40px;
   outline: none;
+  transition: border-color 250 ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-input:focus {
   border-color: #2196f3;
@@ -759,9 +832,11 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: 1px solid #2196f3;
+  transition: background-color 250ms, border 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-submit-btn:focus {
-  background: #188ce8;
+  background-color: #188ce8;
   border: 1px solid #188ce8;
 }
 .modal-submit-btn:hover {
@@ -784,6 +859,8 @@ img {
   line-height: 14px;
   letter-spacing: 0.01em;
   resize: none;
+  transition: border-color 250ms, fill 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-text:focus {
   border-color: #2196f3;
@@ -802,7 +879,6 @@ img {
 }
 .modal-check-box {
   margin-bottom: 30px;
-  /* display: flex; */
 }
 .modal-check-text {
   display: flex;

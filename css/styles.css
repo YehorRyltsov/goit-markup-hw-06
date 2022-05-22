@@ -763,6 +763,7 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 5px;
   fill: #000000;
+  cursor: pointer;
 }
 .modal-close-btn:focus {
   fill: #2196f3;
@@ -859,6 +860,8 @@ img {
   line-height: 14px;
   letter-spacing: 0.01em;
   resize: none;
+  border=color: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
   transition: border-color 250ms, fill 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -888,14 +891,16 @@ img {
   color: #757575;
   text-align: center;
   align-items: center;
+  cursor: pointer;
 }
 .check-icon {
   fill: transparent;
 }
-.modal-check-text span {
+.modal-vis-check {
   display: flex;
   width: 16px;
   height: 15px;
+  padding-top: 2px;
   border-radius: 3px;
   border: 2px solid #212121;
   margin-right: 5px;
@@ -906,10 +911,10 @@ img {
   text-decoration-line: underline;
   color: #2196f3;
 }
-.modal-chekid:checked + .modal-check-text span {
+.modal-chekid:checked + .modal-check-text .modal-vis-check {
   background-color: #2196f3;
   border: 2px solid #2196f3;
 }
-.modal-chekid:checked + .modal-check-text .check-icon {
+.modal-chekid:checked + .modal-check-text .modal-vis-check svg {
   fill: #ffffff;
 }
